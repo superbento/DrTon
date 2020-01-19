@@ -69,6 +69,7 @@
     <Compile Include="Assets\Koreographer\Demos\Scripts\MusicalImpulse.cs" />
     <Compile Include="Assets\Koreographer\Demos\Scripts\TempoSwitch.cs" />
     <Compile Include="Assets\Koreographer\Demos\Scripts\UIMessageSetter.cs" />
+    <Compile Include="Assets\ShuoAsset\Portal Particle\Scrpt\CameraHolder.cs" />
     <None Include="Assets\Koreographer\ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/软件/unity workshop/DrTon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
