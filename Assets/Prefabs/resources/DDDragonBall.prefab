@@ -601,7 +601,7 @@ Transform:
   m_GameObject: {fileID: 8339070354025065756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.8173513, y: 0.7170229, z: -3.115653}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 7245729451989153339}
   - {fileID: 2119610089546277871}
@@ -726,7 +726,9 @@ MonoBehaviour:
   score: 0
   combo: 0
   canvas: {fileID: 8339070354993493550}
-  isOn: 1
+  isTenOn: 0
+  isTwentyOn: 0
+  isThirtyOn: 0
 --- !u!1 &8339070354993493523
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,11 +992,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8339070355053775547}
     m_Modifications:
-    - target: {fileID: 4935970731095107629, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
-        type: 3}
-      propertyPath: m_Name
-      value: WizardsTower
-      objectReference: {fileID: 0}
     - target: {fileID: 4935970731095107630, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1049,6 +1046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935970731095107629, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
+        type: 3}
+      propertyPath: m_Name
+      value: WizardsTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1185e0c0d3e95a34dba1703edefbe7b1, type: 3}
