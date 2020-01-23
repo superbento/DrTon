@@ -16,8 +16,8 @@ public class DrumScore : MonoBehaviour
                 GameObject HitAnimation = UnityEngine.Resources.Load("HitAnimations") as GameObject;
                 HitAnimation = Instantiate(HitAnimation);//实例化预制体
                 HitAnimation.transform.parent = this.gameObject.transform;//指定父物体
-                HitAnimation.transform.position = this.gameObject.transform.position - new Vector3(3.93f, -3.06f, 3.73f);
-                scoreManager.score += 100;
+                HitAnimation.transform.position = this.gameObject.transform.position - new Vector3(0.397f, -0.449f, 0.406f);
+            scoreManager.score += 100;
                 scoreManager.combo++;
 
 
@@ -50,7 +50,7 @@ public class DrumScore : MonoBehaviour
     {
        
         scoreManager = GameObject.Find("GameManager").GetComponent<ScoreManager>();
-  
+        
     }
 
     // Update is called once per frame
