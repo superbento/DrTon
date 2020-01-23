@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8100055323010661145}
   - component: {fileID: 7951587000705443134}
+  - component: {fileID: 3603455997012373269}
   m_Layer: 0
   m_Name: combo20
   m_TagString: Untagged
@@ -24,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8100055323010164537}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.66, y: -0.65, z: -1.27}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 8100055323010661147}
   m_Father: {fileID: 0}
@@ -51,6 +52,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3603455997012373269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8100055323010164537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b6b7b0288831cb4d91a4fc944966511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8100055323010164539
 GameObject:
   m_ObjectHideFlags: 0

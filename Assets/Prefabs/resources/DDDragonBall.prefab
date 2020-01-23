@@ -78,9 +78,9 @@ GameObject:
   - component: {fileID: 6536866164468026209}
   - component: {fileID: 6536866164468026208}
   - component: {fileID: 6536866164468026223}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: drum1
-  m_TagString: Untagged
+  m_TagString: drum
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,9 +201,9 @@ GameObject:
   - component: {fileID: 6536866164787446225}
   - component: {fileID: 6536866164787446224}
   - component: {fileID: 8339070355276430673}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: drum2
-  m_TagString: Untagged
+  m_TagString: drum
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -992,6 +992,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8339070355053775547}
     m_Modifications:
+    - target: {fileID: 4935970731095107629, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
+        type: 3}
+      propertyPath: m_Name
+      value: WizardsTower
+      objectReference: {fileID: 0}
     - target: {fileID: 4935970731095107630, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1047,10 +1052,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4935970731095107629, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
+    - target: {fileID: 4935970729862430426, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
         type: 3}
-      propertyPath: m_Name
-      value: WizardsTower
+      propertyPath: m_Range
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935970730527421320, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
+        type: 3}
+      propertyPath: m_Range
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935970730510582508, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
+        type: 3}
+      propertyPath: m_Range
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935970730582530446, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
+        type: 3}
+      propertyPath: m_Range
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935970731598578419, guid: 1185e0c0d3e95a34dba1703edefbe7b1,
+        type: 3}
+      propertyPath: m_Range
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1185e0c0d3e95a34dba1703edefbe7b1, type: 3}

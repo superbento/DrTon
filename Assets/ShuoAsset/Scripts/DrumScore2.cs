@@ -6,28 +6,29 @@ public class DrumScore2 : MonoBehaviour
 {
     public bool juggScore = false;
     ScoreManager scoreManager;
-    CubeTwoMove cubeMove;
 
     void OnCollisionEnter(Collision collision)
     {
-        if (juggScore)
-        {
-            GameObject HitAnimation = UnityEngine.Resources.Load("HitAnimations") as GameObject;
-            HitAnimation = Instantiate(HitAnimation);//实例化预制体
-            HitAnimation.transform.parent = this.gameObject.transform;//指定父物体
-            HitAnimation.transform.position = this.gameObject.transform.position - new Vector3(3.93f,-3.06f,3.73f);
-            scoreManager.score += 100;
-            scoreManager.combo++;
+       
+            if (juggScore)
+            {
+                GameObject HitAnimation = UnityEngine.Resources.Load("HitAnimations") as GameObject;
+                HitAnimation = Instantiate(HitAnimation);//实例化预制体
+                HitAnimation.transform.parent = this.gameObject.transform;//指定父物体
+                HitAnimation.transform.position = this.gameObject.transform.position - new Vector3(3.93f, -3.06f, 3.73f);
+                scoreManager.score += 100;
+                scoreManager.combo++;
 
 
 
-        }
-        else
-        {
-            scoreManager.score -= 50;
-            scoreManager.combo = 0;
-        }
-        cubeMove.UpCube();
+            }
+            else
+            {
+                scoreManager.score -= 50;
+                scoreManager.combo = 0;
+            }
+            
+        
     }
 
     // 碰撞结束
@@ -46,8 +47,9 @@ public class DrumScore2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cubeMove = GameObject.Find("Cube2").GetComponent<CubeTwoMove>();
+    
         scoreManager = GameObject.Find("GameManager").GetComponent<ScoreManager>();
+ 
     }
 
     // Update is called once per frame
