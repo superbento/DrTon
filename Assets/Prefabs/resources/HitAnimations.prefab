@@ -71,21 +71,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2654913665224754965}
     m_Modifications:
-    - target: {fileID: 1690970964263470, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
-      propertyPath: m_Name
-      value: Teleport_2 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4294327617376784, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4294327617376784, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4294327617376784, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4294327617376784, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
       propertyPath: m_LocalRotation.x
@@ -118,6 +114,37 @@ PrefabInstance:
     - target: {fileID: 4294327617376784, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294327617376784, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294327617376784, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294327617376784, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690970964263470, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
+      propertyPath: m_Name
+      value: Teleport_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 198377259641924046, guid: 2253f8e536895cd449b75e71ab8e1845,
+        type: 3}
+      propertyPath: scalingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198566110570869436, guid: 2253f8e536895cd449b75e71ab8e1845,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.078
+      objectReference: {fileID: 0}
+    - target: {fileID: 198419031768776098, guid: 2253f8e536895cd449b75e71ab8e1845,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.075
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2253f8e536895cd449b75e71ab8e1845, type: 3}
