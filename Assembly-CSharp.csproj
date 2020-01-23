@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\cube.cs" />
     <Compile Include="Assets\EventSubscriber.cs" />
+    <Compile Include="Assets\EventSubsriber2.cs" />
     <Compile Include="Assets\Koreographer\Demos\Scripts\ColorAdjuster.cs" />
     <Compile Include="Assets\Koreographer\Demos\Scripts\CubeScaler.cs" />
     <Compile Include="Assets\Koreographer\Demos\Scripts\DemoControlsUI.cs" />
@@ -70,6 +71,12 @@
     <Compile Include="Assets\Koreographer\Demos\Scripts\TempoSwitch.cs" />
     <Compile Include="Assets\Koreographer\Demos\Scripts\UIMessageSetter.cs" />
     <Compile Include="Assets\ShuoAsset\Portal Particle\Scrpt\CameraHolder.cs" />
+    <Compile Include="Assets\ShuoAsset\Scripts\CircleScore.cs" />
+    <Compile Include="Assets\ShuoAsset\Scripts\ComboTag.cs" />
+    <Compile Include="Assets\ShuoAsset\Scripts\CubeMove.cs" />
+    <Compile Include="Assets\ShuoAsset\Scripts\CubeTwoMove.cs" />
+    <Compile Include="Assets\ShuoAsset\Scripts\DrumScore.cs" />
+    <Compile Include="Assets\ShuoAsset\Scripts\DrumScore2.cs" />
     <Compile Include="Assets\ShuoAsset\Scripts\ScoreManager.cs" />
     <None Include="Assets\Koreographer\ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
