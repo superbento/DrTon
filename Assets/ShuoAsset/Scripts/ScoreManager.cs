@@ -11,7 +11,9 @@ public class ScoreManager : MonoBehaviour
     [SerializeField]
     private Canvas canvas;
     Animator animator;
-    public bool isOn=true;
+    public bool isTenOn=false;
+    public bool isTwentyOn = false;
+    public bool isThirtyOn = false;
     void Start()
     {
         animator = GameObject.Find("Victory").GetComponent<Animator>();
@@ -22,39 +24,59 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         canvas.GetComponent<Text>().text = "Your score is: " + score+"\nCombo: "+combo;
-        if (combo == 10|| combo == 20 || combo == 30 )
+        if (combo == 10)
         {
-            animator.SetBool("comboYes", true);
-            Invoke("cancelComboBool",0.2f);
-            if (isOn)
+            if (!isTenOn)
             {
-                if (combo == 10)
-                {
-                    GameObject scoreAnimation = UnityEngine.Resources.Load("combo10") as GameObject;
-                    scoreAnimation = Instantiate(scoreAnimation);//实例化预制体
-                    scoreAnimation.transform.parent = this.gameObject.transform;//指定父物体
-                }
-                if (combo == 20)
-                {
-                    GameObject scoreAnimation = UnityEngine.Resources.Load("combo10") as GameObject;
-                    scoreAnimation = Instantiate(scoreAnimation);//实例化预制体
-                    scoreAnimation.transform.parent = this.gameObject.transform;//指定父物体
-                }
-                if (combo == 30)
-                {
-                    GameObject scoreAnimation = UnityEngine.Resources.Load("combo10") as GameObject;
-                    scoreAnimation = Instantiate(scoreAnimation);//实例化预制体
-                    scoreAnimation.transform.parent = this.gameObject.transform;//指定父物体
-                }
-                isOn = false;
-                
+                animator.SetBool("comboYes", true);
+                Invoke("cancelComboBool", 2f);
+
+                GameObject scoreAnimation = UnityEngine.Resources.Load("combo10") as GameObject;
+                scoreAnimation = Instantiate(scoreAnimation);//实例化预制体
+                scoreAnimation.transform.parent = this.gameObject.transform;//指定父物体
+                isTenOn = true;
+
             }
+            
+        }
+        if (combo == 20)
+        {
+            if (!isTwentyOn)
+            {
+                animator.SetBool("comboYes", true);
+                Invoke("cancelComboBool", 2f);
+
+                GameObject scoreAnimation = UnityEngine.Resources.Load("combo20") as GameObject;
+                scoreAnimation = Instantiate(scoreAnimation);//实例化预制体
+                scoreAnimation.transform.parent = this.gameObject.transform;//指定父物体
+                isTwentyOn = true;
+
+            }
+
+        }
+        if (combo == 30)
+        {
+            if (!isThirtyOn)
+            {
+                animator.SetBool("comboYes", true);
+                Invoke("cancelComboBool", 2f);
+
+                GameObject scoreAnimation = UnityEngine.Resources.Load("combo30") as GameObject;
+                scoreAnimation = Instantiate(scoreAnimation);//实例化预制体
+                scoreAnimation.transform.parent = this.gameObject.transform;//指定父物体
+                isThirtyOn = true;
+
+            }
+
         }
         if (combo == 0)
         {
-            animator.SetBool("comboYes", false);
-            isOn = true;
+            isTenOn = false;
+            isTwentyOn = false;
+            isThirtyOn = false;
         }
+
+
     }
     void cancelComboBool()
     {

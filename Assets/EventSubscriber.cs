@@ -44,7 +44,7 @@ public class EventSubscriber : MonoBehaviour
     void scoreJugg(KoreographyEvent koreoEvent)
     {
 
-        Invoke("juggChange",0.8f);
+        Invoke("juggChange",0.65f);
 
     }
     void AnimationStart(KoreographyEvent koreoEvent)

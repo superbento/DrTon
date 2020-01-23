@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: -2076007791, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
   m_Name: "longzhu - \u526F\u672C"
   m_EditorClassIdentifier: 
-  mSourceClip: {fileID: 8300000, guid: cac14be9bdb38e44fa3088beb64196aa, type: 3}
+  mSourceClip: {fileID: 8300000, guid: 0fa3d07b54aa1e445900ca64f6c4a2fe, type: 3}
   mAudioFilePath: 
   mSampleRate: 44100
   mIgnoreLatencyOffset: 0
@@ -23,4 +23,5 @@ MonoBehaviour:
     beatsPerMeasure: 4
     bStartNewMeasure: 1
   mTracks:
-  - {fileID: 11400000, guid: 03c71ba60b3ecac468f6a29ecc7680a0, type: 2}
+  - {fileID: 11400000, guid: 9517dadf0a244244e9be43e1e201cce7, type: 2}
+  - {fileID: 11400000, guid: e7729b0da9275c245b12cab5e83fd361, type: 2}
