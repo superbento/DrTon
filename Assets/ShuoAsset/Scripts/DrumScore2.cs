@@ -15,7 +15,7 @@ public class DrumScore2 : MonoBehaviour
                 GameObject HitAnimation = UnityEngine.Resources.Load("HitAnimations") as GameObject;
                 HitAnimation = Instantiate(HitAnimation);//实例化预制体
                 HitAnimation.transform.parent = this.gameObject.transform;//指定父物体
-                HitAnimation.transform.position = this.gameObject.transform.parent.position - new Vector3(0.397f, -0.449f, 0.406f);
+                HitAnimation.transform.position = this.gameObject.transform.position - new Vector3(0.397f, -0.449f, 0.406f);
             scoreManager.score += 100;
                 scoreManager.combo++;
 
