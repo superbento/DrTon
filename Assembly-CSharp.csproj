@@ -60,6 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\4K_Space_Skyboxes\Demo\Scripts\Camera_control.cs" />
+    <Compile Include="Assets\4K_Space_Skyboxes\Demo\Scripts\Skybox_rotator.cs" />
     <Compile Include="Assets\cube.cs" />
     <Compile Include="Assets\EventSubscriber.cs" />
     <Compile Include="Assets\EventSubsriber2.cs" />
